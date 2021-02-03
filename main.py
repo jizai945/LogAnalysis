@@ -246,7 +246,7 @@ class Main:
     # 出参：True保留 / False过滤掉
     def filterOneLineByTime(self, line = 0, start=0, stop=0):
         # 时间过滤勾选框是否勾选
-        if self.ui.eventCheckBox.checkState():
+        if self.ui.timeCheckBox.checkState():
 
             row_tick_text = self.model.item(line, 0).text()
             row_tick = ((int(row_tick_text[0:2])*60) + int(row_tick_text[3:5]))*60+int(row_tick_text[6:8])
